@@ -1,4 +1,4 @@
-package com.itb.inf3cn.fitbox.model.model.enums;
+package com.itb.inf3cn.fitbox.model.enums;
 
 public enum TipoUsuario {
 

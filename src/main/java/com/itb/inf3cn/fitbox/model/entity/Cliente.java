@@ -1,12 +1,17 @@
 package com.itb.inf3cn.fitbox.model.entity;
 
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
+import lombok.*;
 
 @Entity
-
-public class Cliente extends Usuario{
+@DiscriminatorValue("CLIENTE")
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(callSuper = true)
+public class Cliente extends Usuario {
 
     private String numeroPontos;
-
-
 }

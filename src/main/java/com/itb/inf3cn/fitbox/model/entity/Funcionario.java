@@ -1,12 +1,18 @@
 package com.itb.inf3cn.fitbox.model.entity;
 
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
+import lombok.*;
 
 @Entity
-
-public class Funcionario  extends Usuario{
+@DiscriminatorValue("FUNCIONARIO")
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(callSuper = true)
+public class Funcionario extends Usuario{
 
     private String cnh;
 
-    
 }
